@@ -1,5 +1,9 @@
 import axios from "axios";
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
+
+
 export const register = async (data) => {
     const response = await axios.post("/api/users/register", data);
     return response.data;
@@ -7,7 +11,7 @@ export const register = async (data) => {
 };
 
 export const login = async (data) => {
-    const response = await axios.post("/api/users/login", data);
+    const response = await axios.post(`${apiUrl}/api/users/login`, data);
     return response.data;
 };
 

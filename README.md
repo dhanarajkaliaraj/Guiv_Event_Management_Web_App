@@ -14,7 +14,7 @@ Authentication: JWT (JSON Web Token) for secure login
 Role-based Access: Two roles — Admin and User
 
 ### User Roles
-### *Admin*
+### *Admin* (existing test admin id: admin@gmail.com | password: admin)
 
 Create events
 
